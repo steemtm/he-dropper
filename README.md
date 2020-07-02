@@ -6,3 +6,6 @@ install steemengine and do a slight tweak to get it to work with steem-engine to
 
 This is very basic, and does not include state saving in case of node disconnect
 freely use at your own risk!
+
+
+Edit the settings section directly in dropper.py before running!
