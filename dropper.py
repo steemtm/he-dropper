@@ -20,7 +20,7 @@ type_to_check = "stake"  # "stake" or "balance"
 token_to_send = "ARCHONM" 
 minimum_balance = 25    # or minimum stake
 amount_to_split = 50   # Amount in account to split up between holders. Because of rounding, allow for +/- 1% in your balance before sending
-beem_unloack_pass = "" # your password to unlock beem
+beem_unlock_pass = "" # your password to unlock beem
 
 
 
@@ -55,7 +55,7 @@ def drop():
         print(account + " gets " + str(tosend) + token_to_send + " from " + str(balance) + " " + token_to_check)
         total_sent = total_sent + tosend
         memo = str(token_to_send + " airdrop based on your stake of " + str(balance) + token_to_check)
-        hive.wallet.unlock(beem_unloack_pass)
+        hive.wallet.unlock(beem_unlock_pass)
         if account == send_account:
             print("Skipping send account (can't send to myself)")
             continue
